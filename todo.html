@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <style>
+        body{
+            background-color: lightblue;
+            padding: 50px;  
+            color: black;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: black;
+            font-family: arial, sans-serif;
+            font-weight: bold;
+
+
+        }
+        h1 {
+            color: black;
+            font-family: cursive;
+            border-bottom: 2px solid black; 
+            
+            
+
+        }
+        button {
+            margin-top: 10px;
+            background-color: rgb(219, 172, 172);
+            color: rgb(3, 2, 10);
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input, select {
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid hsl(0, 0%, 80%);
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <p>daily routine is here dude!!!</p>
+    <label for="todo">enter task:</label>
+    <input type="text" id="todo" name="todo">
+    <br>
+
+    <label for="categories">select category:</label>
+
+    <select name="categories">
+        <option value="high">morning task</option>
+        <option value="medium">midday task</option>
+        <option value="low">evening task</option>
+    </select>
+
+    <label for="date">select date:</label>
+    <input type="date" id="date" name="date">   
+
+    <label for="time">select time:</label>
+    <input type="time" id="time" name="time">
+    <br>
+
+    <label for="priority">select priority:</label>
+    <br>
+    <select name="task_priority">
+        <option value="high">important</option>
+        <option value="medium">Medium</option>
+        <option value="low">least important</option>
+    </select>
+    <br>   
+
+    <button type="submit">Add Task</button>
+
+
+</body>
+</html>
